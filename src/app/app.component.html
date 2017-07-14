@@ -1,17 +1,21 @@
 <div class="container">
   <nav>
+    <a routerLink=""><img src="src\logo.png" alt=""></a>
     <ul>
-      <a routerLink="">Home</a>
-      <a routerLink="field-hockey">Field Hockey</a>
-      <a routerLink="admin">Admin</a>
+      <li><a routerLink="field-hockey"><img src="src\hockey.png" alt=""><span>Field Hockey</span></a></li>
+      <li><a href="#"><img src="src\basketball.png" alt=""><span>Basket Ball</span></a></li>
+      <li><a href="#"><img src="src\rugby.png" alt=""><span>Rugby</span></a></li>
+
     </ul>
+    <a routerLink="admin">Admin</a>
   </nav>
 
-  <main>
-    <h1>Welcome to {{title}}</h1>
-    <section>
-      <router-outlet></router-outlet>
-    </section>
-  </main>
+
+  <section>
+    <router-outlet></router-outlet>
+  </section>
 
 </div>
+<footer>
+
+</footer>
