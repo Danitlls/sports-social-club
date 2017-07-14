@@ -19,7 +19,7 @@ export class FieldHockeyComponent implements OnInit {
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
-    console.log(this.router.url);
+    // console.log(this.router.url);
   }
 
   goToDetailPage(clickedPlayer) {

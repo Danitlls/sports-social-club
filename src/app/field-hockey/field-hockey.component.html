@@ -4,11 +4,11 @@
     <div class="items panel-body">
       <img src="{{player.image}}" alt="" />
       <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> of team: {{player.team}}</h3>
-      <!-- <div *ngIf="currentRoute === '/admin'">
-        {{player.age}}
+      <div *ngIf="currentRoute === '/admin'">
+        Age: {{player.age}}
         <hr>
-        <app-edit-player [selectedProduct]="player"></app-edit-player>
-      </div> -->
+        <!-- <app-edit-player [selectedPlayer]="player"></app-edit-player> -->
+      </div>
     </div>
   </div>
 </div>
