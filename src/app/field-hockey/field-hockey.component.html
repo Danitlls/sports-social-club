@@ -1,13 +1,14 @@
 <h2>Field Hockey</h2>
-<div>
-  <div *ngFor="let player of players | async">
-    <div class="items panel-body">
-      <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> of team: {{player.team}}</h3>
-      <div *ngIf="currentRoute === '/admin'">
-        Age: {{player.age}}
-        <hr>
-        <app-edit-player [selectedPlayer]="player"></app-edit-player>
-      </div>
+<section>
+  <h3>Our Members:</h3>
+
+  <div class="players" *ngFor="let player of players | async">
+    <p (click)="goToDetailPage(player)"> {{player.name}}</p>
+    <div *ngIf="currentRoute === '/admin'">
+        <!-- <p>of team: {{player.team}}</p>
+        <p>Age: {{player.age}}</p>
+        <hr> -->
+      <app-edit-player [selectedPlayer]="player"></app-edit-player>
     </div>
   </div>
-</div>
+</section>
