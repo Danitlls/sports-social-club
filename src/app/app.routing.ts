@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     component: FieldHockeyComponent
   },
   {
-    path: 'player-detail/:id',
+    path: 'players/:id',
     component: PlayerDetailComponent
   },
   {
