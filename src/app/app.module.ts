@@ -11,17 +11,17 @@ import { AdminComponent } from './admin/admin.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
 //routing:
 import { routing } from './app.routing';
-//database:
-// import { masterFirebaseConfig } from './api-keys';
-// import { AngularFireModule } from 'angularfire2';
-// import { AngularFireDatabaseModule } from 'angularfire2/database';
+// database:
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-// export const firebaseConfig = {
-//   apiKey: masterFirebaseConfig.apiKey,
-//   authDomain: masterFirebaseConfig.authDomain,
-//   databaseURL: masterFirebaseConfig.databaseURL,
-//   storageBucket: masterFirebaseConfig.storageBucket
-// };
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -37,8 +37,8 @@ import { routing } from './app.routing';
     FormsModule,
     HttpModule,
     routing,
-    // AngularFireModule.initializeApp(firebaseConfig),
-    // AngularFireDatabaseModule
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
