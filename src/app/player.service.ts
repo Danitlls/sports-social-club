@@ -22,6 +22,16 @@ export class PlayerService {
     this.players.push(newPlayer)
   }
 
+  updatePlayer(localUpdatedPlayer){
+    var playerEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
+    playerEntryInFirebase.update({name: localUpdatedPlayer.name,
+                                price: localUpdatedPlayer.age,
+                                team: localUpdatedPlayer.team});
+  }
 
+  deletePlayer(localPlayerToDelete){
+    var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete.$key);
+    playerEntryInFirebase.remove();
+  }
 
 }

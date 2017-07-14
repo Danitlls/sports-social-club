@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { FieldHockeyComponent } from './field-hockey/field-hockey.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
 import { AdminComponent }   from './admin/admin.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'edit-player',
+    component: EditPlayerComponent
   }
 ];
 
