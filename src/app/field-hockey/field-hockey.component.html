@@ -1,1 +1,14 @@
-<h1>works</h1>
+<h2>Field Hockey</h2>
+<div>
+  <div *ngFor="let player of players | async" class="panel panel-default">
+    <div class="items panel-body">
+      <img src="{{player.image}}" alt="" />
+      <h3 (click)="goToDetailPage(player)"><em>{{player.name}}</em> of team: {{player.team}}</h3>
+      <!-- <div *ngIf="currentRoute === '/admin'">
+        {{player.age}}
+        <hr>
+        <app-edit-player [selectedProduct]="player"></app-edit-player>
+      </div> -->
+    </div>
+  </div>
+</div>
