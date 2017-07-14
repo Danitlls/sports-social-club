@@ -1,3 +1,8 @@
-<p>
-  player-detail works!
-</p>
+<div class="details">
+  <h2>{{(playerToDisplay | async)?.sport}}</h2>
+  <h4>{{(playerToDisplay | async)?.team}}</h4>
+  <h3>{{(playerToDisplay | async)?.name}}</h3>
+  <p>{{(playerToDisplay | async)?.sex}}</p>
+  <p>{{(playerToDisplay | async)?.age}}</p>
+
+</div>

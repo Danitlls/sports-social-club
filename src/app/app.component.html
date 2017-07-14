@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <nav>
+    <ul>
+      <a routerLink="">home</a>
+      <a routerLink="field-hockey">Field Hockey</a>
+      <a routerLink="admin">Admin</a>
+      <a routerLink="player-detail/:id">Player detail test</a>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to {{title}}</h1>
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+
+</div>
