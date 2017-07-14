@@ -1,37 +1,42 @@
-<h3>Add New Player to Club</h3>
-<div>
-  <div>
-    <label>Player Name:</label>
-    <br>
-    <input #newPlayer>
+<section>
+  <h3>Add New Player to Club</h3>
+
+  <div class="form">
+    <div>
+      <label>Player Name:</label>
+      <br>
+      <input #newPlayer>
+    </div>
+
+    <div>
+      <label>Player Age:</label>
+      <br>
+      <input #newAge>
+    </div>
+
+    <div>
+      <label>Player sex:</label>
+      <br>
+      <input #newSex>
+    </div>
+
+    <div>
+      <label>Player Team:</label>
+      <br>
+      <input #newTeam>
+    </div>
+
+    <div>
+      <label>Player Sport:</label>
+      <br>
+      <input #newSport>
+    </div>
+
+    <button (click)="submitForm(newPlayer.value, newAge.value, newSex.value, newTeam.value, newSport.value); newPlayer.value=''; newAge.value=''; newSex.value=''; newTeam.value=''; newSport.value= '' ">Add</button>
   </div>
 
-  <div>
-    <label>Player Age:</label>
-    <br>
-    <input #newAge>
-  </div>
 
-  <div>
-    <label>Player sex:</label>
-    <br>
-    <input #newSex>
-  </div>
-
-  <div>
-    <label>Player Team:</label>
-    <br>
-    <input #newTeam>
-  </div>
-
-  <div>
-    <label>Player Sport:</label>
-    <br>
-    <input #newSport>
-  </div>
-</div>
-
- <button (click)="submitForm(newPlayer.value, newAge.value, newSex.value, newTeam.value, newSport.value); newPlayer.value=''; newAge.value=''; newSex.value=''; newTeam.value=''; newSport.value= '' ">Add</button>
+<section>
 
 <div>
  <app-field-hockey></app-field-hockey>

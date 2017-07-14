@@ -16,9 +16,12 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  private shown: string = 'EQUIFAX';
+
   submitForm(name: string, age: number, sex: string, team: string, sport: string) {
    var newPlayer: Player = new Player(name, age,sex, team, sport);
    this.playerService.addPlayer(newPlayer);
  }
+
 
 }
