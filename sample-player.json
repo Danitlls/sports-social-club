@@ -1,0 +1,14 @@
+{ "players": [{
+    "name": "Daniela Trulls",
+    "age": 30,
+    "sex": "female",
+    "sport": "field-hockey",
+    "team": "f-superior"
+  },
+  { "name": "John Smith",
+    "age": 9,
+    "sex": "male",
+    "sport": "field-hockey",
+    "team": "m-infant"
+  }]
+}
