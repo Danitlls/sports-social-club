@@ -1,20 +1,22 @@
-<h4>Edit Player</h4>
+<section>
+  <h4>Edit Player</h4>
 
-<label>New Player Name:</label>
-<input [(ngModel)]="selectedPlayer.name">
-<br>
+  <label>New Player Name:</label>
+  <input [(ngModel)]="selectedPlayer.name">
+  <br>
 
-<label>New Player Age:</label>
-<input [(ngModel)]="selectedPlayer.age">
-<br>
+  <label>New Player Age:</label>
+  <input [(ngModel)]="selectedPlayer.age">
+  <br>
 
-<label>New Player Team:</label>
-<input [(ngModel)]="selectedPlayer.team">
+  <label>New Player Team:</label>
+  <input [(ngModel)]="selectedPlayer.team">
 
-<label>New Player Sport:</label>
-<input [(ngModel)]="selectedPlayer.sport">
+  <label>New Player Sport:</label>
+  <input [(ngModel)]="selectedPlayer.sport">
 
 
-<button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
-<br>
-<button (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
+  <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+  <br>
+  <button class="delete" (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
+</section>
