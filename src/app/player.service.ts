@@ -25,7 +25,7 @@ export class PlayerService {
   updatePlayer(localUpdatedPlayer){
     var playerEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
     playerEntryInFirebase.update({name: localUpdatedPlayer.name,
-                                price: localUpdatedPlayer.age,
+                                age: localUpdatedPlayer.age,
                                 team: localUpdatedPlayer.team});
   }
 
